@@ -49,7 +49,7 @@ public class CameraActivity extends Activity implements HoloLister {
 		webView = (WebView) findViewById(R.id.web_view);//获取WebView的实例
 		webView.getSettings().setJavaScriptEnabled(true); //让webview支持JavaScript脚本
 		webView.setWebViewClient(new WebViewClient());//调用setwebviewclient方法并传入一个webviewclient实例
-		webView.loadUrl("http://10.10.31.3:8080/index.jsp");//调用loadURL方法并传入网址 即可展示网页内容
+		webView.loadUrl("file:///android_asset/eye.html");//调用loadURL方法并传入网址 即可展示网页内容
 		mJSHook = new JSHook();//获取JSHook实例
 		webView.addJavascriptInterface(mJSHook, "test");//添加JS反射接口并传入mJSHook实例
 
