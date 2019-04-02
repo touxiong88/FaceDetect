@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 19
-    buildToolsVersion "27.0.1"
+    compileSdkVersion 28
+
 
     defaultConfig {
         applicationId "com.demo.playcamera_v3"
-        minSdkVersion 15
-        targetSdkVersion 17
+        minSdkVersion 17
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -30,5 +30,5 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:19.1.0'
+//    compile 'com.android.support:support-v4:19.1.0'
 }
